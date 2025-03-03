@@ -1,14 +1,9 @@
-from langchain.tools import BaseTool
 from typing import List, Union
 
 import re
-from langchain.prompts import StringPromptTemplate
 from langchain.agents import AgentOutputParser
 from langchain.schema import AgentAction, AgentFinish
 from langchain_core.exceptions import OutputParserException
-from tools.prompts_tpl import CustomPromptTemplate
-from tools.prompts import action_template
-from tools.simple_tool import AddTool, SubTool
 
 
 class CustomOutputParser(AgentOutputParser):
@@ -33,18 +28,3 @@ class CustomOutputParser(AgentOutputParser):
         action_input = match.group(2)
         # Return the action and action input
         return AgentAction(tool=action, tool_input=action_input.strip(" ").strip('"'), log=llm_output)
-
-
-if __name__ == "__main__":
-    p = CustomOutputParser()
-    print(p.parse("Action 1: AddTool\nAction Input: 2,6"))
-
-    # 对我们写的CustomOutputParser进行测试，检查action_template是否能够正确解析, 和有哪些action_template中的参数没有被解析
-    mytools = [AddTool(), SubTool()]
-    tpl = CustomPromptTemplate(template=action_template,
-                               input_variables=["input", "agent_scratchpad", "intermediate_steps", "tools",
-                                                "tool_names"],
-                               tools=mytools)
-    ret = tpl.invoke({"input": "2+1=?", "agent_scratchpad": "I am thinking", "intermediate_steps": [], "tools": mytools,
-                "tool_names": ["AddTool", "SubTool"]})
-    print(ret)
