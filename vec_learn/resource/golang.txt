@@ -1,0 +1,12 @@
+Golang 语言介绍
+Golang（又称 Go）是由 Google 开发的一种静态类型、编译型编程语言，于 2009 年正式发布。Go 语言的设计目标是简化编程，提升开发效率，同时保持高性能。它的语法简洁，支持并发编程，内置垃圾回收机制，适合构建现代高性能应用。
+
+使用者情况分析
+端开发者：Go 常用于构建高性能后端服务，许多开发者从 Python、Java 等语言转向 Go。DevOps 工程师：Go 在 DevOps 工具（如 Docker、Kubernetes）中广泛应用，相关从业者常使用 Go。
+
+学习资源推荐
+官方文档：https://golang.org/doc/ 《Go 语言圣经》：Alan A.A. Donovan 和 Brian W. Kernighan 合著，中文由人民邮电出版社出版，是学习 Go 语言的经典之作。《Go 语言实战》：William Kennedy、Brian Ketelsen 和 Erik St. Martin 合著，中文由人民邮电出版社出版，内容实用丰富。
+
+工资待遇分析
+Go 开发者的平均工资较高，根据 2020 年的数据，Go 开发者的平均年薪约为 15 万美元。Go 开发者的工资水平与经验、地区、公司等因素有关，大厂、外企、创业公司等对 Go 开发者的需求量大，工资水平较高。
+
