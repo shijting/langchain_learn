@@ -61,7 +61,7 @@ docker pull qdrant/qdrant:v1.10.0
 docker run -d --name dqrant -p 6333:6333 \
 -v $(pwd)/dqrant_data:/dqrant/storage qdrant/qdrant:v1.10.0
 ```
-在浏览器中输入http://localhost:6333 或者公网地址可以看到qdrant的管理界面
+在浏览器中输入http://localhost:6333/dashboard 或者公网地址可以看到qdrant的管理界面
 
 如果要添加安全认证，可以使用nginx反向代理，进行安全认证（自行ai搜索）
 
@@ -71,7 +71,11 @@ pip install qdrant-client
 pip install -U langchain-qdrant
 ```
 
+#### 如何相对精准搜索
+我们在搜索关键词 "golang程序员工资待遇如何" 出来最相似的是最相似的应该是【工资待遇分析】而不是【golang程序员如何看待自己的工资待遇】
 
+要实现相对精度的搜索:
+在插入到数据库时候需要人工操作，要先打好标签在插入，比如#薪资#待遇, 在插入的是时候把标签插入到metadata中，在搜索的时候再根据标签进行过滤
 
 
 

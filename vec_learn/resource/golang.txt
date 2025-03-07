@@ -6,7 +6,10 @@ Golang（又称 Go）是由 Google 开发的一种静态类型、编译型编程
 
 学习资源推荐
 官方文档：https://golang.org/doc/ 《Go 语言圣经》：Alan A.A. Donovan 和 Brian W. Kernighan 合著，中文由人民邮电出版社出版，是学习 Go 语言的经典之作。《Go 语言实战》：William Kennedy、Brian Ketelsen 和 Erik St. Martin 合著，中文由人民邮电出版社出版，内容实用丰富。
+Golang 语言的学习难度和复杂度取决于开发者的编程经验、技能和需求。对于初学者，学习 Go 语言需要一定的时间，但 afterwards， they can start building real-world applications using the language.
 
 工资待遇分析
-Go 开发者的平均工资较高，根据 2020 年的数据，Go 开发者的平均年薪约为 15 万美元。Go 开发者的工资水平与经验、地区、公司等因素有关，大厂、外企、创业公司等对 Go 开发者的需求量大，工资水平较高。
+#薪资#待遇#Go 开发者的平均工资较高，根据 2020 年的数据，Go 开发者的平均年薪约为 15 万美元。Go 开发者的工资水平与经验、地区、公司等因素有关，大厂、外企、创业公司等对 Go 开发者的需求量大，工资水平较高。
 
+golang程序员如何看待自己的工资待遇
+#技能#职场#golang程序员不应该过于着眼于自己的工资，应该注重领域技能的提升和项目实战经验的积累，如果过于看重工资待遇，否则，随着时间的推移，工资水平会随经验、技术能力而提高。
