@@ -18,7 +18,6 @@ if __name__ == "__main__":
     qdrant_store()
     api_key = os.environ.get("TONGYI_API_KEY")
 
-    eb = DashScopeEmbeddings(dashscope_api_key=api_key, model="text-embedding-v1")
     # 使用通义千问大模型语言
     # llm =
     llm = ChatOpenAI(
